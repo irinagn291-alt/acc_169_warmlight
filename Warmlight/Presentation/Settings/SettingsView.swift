@@ -119,6 +119,8 @@ struct SettingsView: View {
                 .font(.footnote.weight(.semibold))
                 .foregroundStyle(AppColor.primary)
 
+            Link("Contact Us", destination: URL(string: "https://warmlight-appka.pro/contact-us")!)
+
             Button("Delete all data", role: .destructive) {
                 viewModel.isShowingResetConfirmation = true
             }
